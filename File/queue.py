@@ -4,6 +4,10 @@ from typing import List
 class Queue:
     """We implement a queue with 2 stacks the 'head' is
     used to extract elements and the 'queue' to insert elements.
+    this class provide the following operations:
+        * test if the queue is empty
+        * push an element
+        * pop an element
     """
     def __init__(self) -> None:
         self.in_stack: List = [] # queue (stack)
