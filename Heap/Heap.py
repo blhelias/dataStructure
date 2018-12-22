@@ -39,12 +39,19 @@ class Heap:
         return root
 
     def up(self, i):
+        """La methode up permet de remonter un noeud en effectuant une suite d'echange
+        entre le noeud et son pere. Le noeud remonte jusqu'a ce que le tas soit dans le bon
+        ordre"""
         #TODO
         raise NotImplementedError()
 
     def down(self, i):
+        """LA methode down permet de descendre un noeud en effectuant une suite d'echange
+        entre le noeud et son fils. Le noeud redescend jusqu'a ce que le ts soit dans le
+        bon ordre"""
         #TODO
         raise NotImplementedError()
 
     def update(self, old, new):
+        """changer la valeur d'un element du tas"""
         raise NotImplementedError()
