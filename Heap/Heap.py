@@ -1,8 +1,7 @@
 import math
 
 class Heap:
-    """ Tas
-    Complexite moyennne d'une opération: O(log(n))
+    """ Tas complexite moyennne d'une opération: O(log(n))
     complexité dans le pire cas: O(n) -> a cause
     du dictionnaire.
     """
@@ -10,7 +9,6 @@ class Heap:
         self.n = 0
         self.heap = []   # index 0 will be ignored
                              # len(self.heap) = 1
-        self.rank = {}
         for x in items:
             self.push(x)
 
@@ -22,27 +20,21 @@ class Heap:
     def push(self, x):
         """push a new element in the heap
         """
-        assert x not in self.rank
         i = len(self)
         self.heap.append(x) # ajout d'une nouvelle feuille
-        # self.rank[x] = i
         self.sift_up()          # maintenir l'ordre du tas
-        # print(self)
 
     def pop(self):
         """Remmove an element from the heap
         """
         root = self.heap[0]
-        # del self.rank[root]
         x = self.heap.pop()  # Enlever la derniere feuille
         if self:             # si le tas n'est pas vide
             self.heap[0] = x # et la mettre à la racine
-            # self.rank[x] = 1
             self.sift_down()     # maintenir l'ordre du tas
         print(self)
         return root
 
-<<<<<<< HEAD
     def sift_up(self):
         k = len(self) - 1
         while k > 0:
@@ -57,19 +49,9 @@ class Heap:
                 break
 
     def sift_down(self):
-=======
-    def up(self, i):
         """La methode up permet de remonter un noeud en effectuant une suite d'echange
         entre le noeud et son pere. Le noeud remonte jusqu'a ce que le tas soit dans le bon
         ordre"""
-        #TODO
-        raise NotImplementedError()
-
-    def down(self, i):
-        """LA methode down permet de descendre un noeud en effectuant une suite d'echange
-        entre le noeud et son fils. Le noeud redescend jusqu'a ce que le ts soit dans le
-        bon ordre"""
->>>>>>> c32212763b5d0a635e39cc64a2f926a002b370ef
         #TODO
         # lorsqu'un element est retire:
         # faire descendre le premier element tant quil est plus
