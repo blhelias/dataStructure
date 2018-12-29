@@ -42,6 +42,7 @@ class Heap:
         print(self)
         return root
 
+<<<<<<< HEAD
     def sift_up(self):
         k = len(self) - 1
         while k > 0:
@@ -56,6 +57,19 @@ class Heap:
                 break
 
     def sift_down(self):
+=======
+    def up(self, i):
+        """La methode up permet de remonter un noeud en effectuant une suite d'echange
+        entre le noeud et son pere. Le noeud remonte jusqu'a ce que le tas soit dans le bon
+        ordre"""
+        #TODO
+        raise NotImplementedError()
+
+    def down(self, i):
+        """LA methode down permet de descendre un noeud en effectuant une suite d'echange
+        entre le noeud et son fils. Le noeud redescend jusqu'a ce que le ts soit dans le
+        bon ordre"""
+>>>>>>> c32212763b5d0a635e39cc64a2f926a002b370ef
         #TODO
         # lorsqu'un element est retire:
         # faire descendre le premier element tant quil est plus
@@ -96,6 +110,7 @@ class Heap:
                 break
 
     def update(self, old, new):
+        """changer la valeur d'un element du tas"""
         raise NotImplementedError()
 
     def __repr__(self):
