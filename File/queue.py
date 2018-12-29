@@ -1,6 +1,3 @@
-from typing import List
-
-
 class Queue:
     """We implement a queue with 2 stacks the 'head' is
     used to extract elements and the 'queue' to insert elements.
@@ -10,8 +7,8 @@ class Queue:
         * pop an element
     """
     def __init__(self) -> None:
-        self.in_stack: List = [] # queue (stack)
-        self.out_stack: List = [] # head (statck)
+        self.in_stack = [] # queue (stack)
+        self.out_stack = [] # head (statck)
 
     def __len__(self) -> int:
         """get the length of the queue
