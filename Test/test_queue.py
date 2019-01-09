@@ -1,4 +1,4 @@
-from ..File import Queue
+from ..Queue import Queue
 from copy import copy
 
 file = Queue()

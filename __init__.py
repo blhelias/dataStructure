@@ -1,7 +1,7 @@
 
 __all__ = [
-    "Pile",
-    "Dictionnaire",
-    "File",
+    "Queue",
+    "Dict",
+    "Stack",
     "Heap"
 ]
